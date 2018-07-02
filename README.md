@@ -1,6 +1,6 @@
 ## Table of contents
 * [General info](#general-info)
-* [Schema](#schema)
+* [Algorithm Schema](#algorithm-schema)
 * [Technologies](#technologies)
 * [Setup](#setup)
 * [Features](#features)
@@ -12,7 +12,7 @@
 My beginnings in learning algorithms. The motivation was to learn how to solve problems with code. 
 I would like to compare several ways to create graphs in this repo. Project in progress.
 
-## Schema
+## Algorithm Schema
 ![Example screenshot](./img/screenshot.png)
 some images here
 
