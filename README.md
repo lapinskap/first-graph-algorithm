@@ -3,7 +3,6 @@
 * [Algorithm Schema](#algorithm-schema)
 * [Technologies](#technologies)
 * [Setup](#setup)
-* [Features](#features)
 * [Status](#status)
 * [Inspiration](#inspiration)
 * [Contact](#contact)
@@ -25,9 +24,6 @@ some images here
 ## Setup
 There is no necessary setup. 
 
-## Code Examples
-Show examples of usage:
-`put-your-code-here`
 
 ## Features
 List of features ready and TODOs for future development
