@@ -1,0 +1,67 @@
+<html>
+    <head>
+        <meta charset = "UTF-8"/>
+        <title>Task 2</title>
+    </head>
+    <body>
+        Hi everyone, it works!
+    <br />
+        <script>
+
+            const clothes = {};
+            clothes['Skirt'] = ["Tie","Jacket"];
+            clothes['Pants'] = ["Belt","Jacket"];
+            clothes['Jacket'] = ["Coat"];
+            clothes['Coat'] = null;
+            clothes['Tie'] = null;
+            clothes['Belt'] = null;
+
+            const dressed = [];
+
+            //key = hash, clothes = hashtable
+            for (var key in clothes) {
+                    //hasOwnProperty filteruje keys z Object.prototype
+                    if (clothes.hasOwnProperty(key)) {
+                         //wybierz ubrania, ktore maja przypisane inne ubrania wewnatrz
+                        if (clothes[key] != null ) {
+                            //Skirt, Pants, Jacket
+                            //jesli nazwa ubrania nie powtarza sie w przypisanych ubraniach (tak powinno być, żeby wynik działał dla róznych inputów)
+                            //efekt to wykluczenie "Jacket"
+                                if( key != "Jacket" ) {
+                                    //Skirt, Pants
+                                    alert('Dressed cloth is: ' + key + ', that allows you to dress: ' + clothes[key]);
+                                    dressed.push(key);
+                                }
+
+
+                        } //ubrania, ktore mają przypisaną wartość null
+                        //wybierz wartosci, ktore odpowiadaja ubraniom z null 
+                         else if(clothes[key] == null) {
+                             //Coat, Tie, Belt
+
+                            //wybierz te ubrania, ktore znajduja sie bezposrednio za Skirt i Pants (tak powinno być, żeby wynik działał dla róznych inputów)
+                            //efekt to wykluczenie "Coat"
+                            if(key != "Coat") {
+                                alert('Dressed cloth: ' + key);
+                                dressed.push(key);
+                            }
+            
+                        }
+                        if (key == "Jacket") {
+                            alert('Dressed cloth: ' + key + ', allows you to dress ' + clothes[key]);
+                            dressed.push(key); 
+                            dressed.push(clothes[key]);
+                        }
+                    
+                    }
+                
+                
+
+            }
+            
+            alert("You dressed in the following order: " + dressed);
+            document.write( "You dressed in the following order: " + dressed);
+            </script>
+
+    </body>
+</html>

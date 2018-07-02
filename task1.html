@@ -1,0 +1,56 @@
+<html>
+    <head>
+        <meta charset = "UTF-8"/>
+        <title>Task 1</title>
+    </head>
+    <body>
+        Hi everyone, it works!
+    <br />
+        <script>
+
+            const clothes = {}; 
+            clothes['Skirt'] = ["Tie","Jacket"];
+            clothes['Pants'] = ["Belt","Jacket"];
+            clothes['Jacket'] = ["Coat"];
+            clothes['Coat'] = null;
+            clothes['Tie'] = null;
+            clothes['Belt'] = null;
+            
+            const dressed = [];
+
+            //key = hash, clothes = hashtable
+            for (var key in clothes) {
+                    //hasOwnProperty filteruje keys z Object.prototype
+                    if (clothes.hasOwnProperty(key)) {
+
+                         //wybierz ubrania, ktore maja przypisane inne ubrania wewnatrz
+                        if (clothes[key] != null ) {
+                            //Skirt, Pants, Jacket
+
+                            //jesli nazwa ubrania nie powtarza sie w przypisanych ubraniach
+                            //czyli wyświetl ubrania które możemy ubrać w 1. kolejności
+                            //efekt to wykluczenie "Jacket"
+                                if( key != "Jacket" ) {
+                                    //Skirt, Pants
+                                    alert('Dressed cloth is: ' + key + ', that allows you to dress: ' + clothes[key]);
+                                    dressed.push(key);
+                                }
+
+
+                        } if (key == "Jacket") {
+                            alert('Hurray! Now you can dress in ' + key );
+                           
+                        }
+                    
+                    }
+                
+                
+
+            }
+            
+            alert("You dressed " + dressed.length + " clothes" + "(" + dressed + ")");
+            document.write( "You dressed " + dressed.length + " clothes" + "(" + dressed + ")");
+            </script>
+
+    </body>
+</html>
