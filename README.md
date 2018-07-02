@@ -1,6 +1,3 @@
-# first-graph-algorithm
-Try to implement graphs in Javascript
-
 ## Table of contents
 * [General info](#general-info)
 * [Schema](#schema)
