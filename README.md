@@ -9,7 +9,7 @@
 
 ## General info
 My beginnings in learning algorithms. The motivation was to learn how to solve problems with code. 
-I would like to compare several ways to create graphs in this repo. Project in progress.
+I would like to compare several ways to create graphs in this repo, therefore I marked the project as _in progress_.
 
 ## Algorithm Schema
 ![Example screenshot](./img/screenshot.png)
