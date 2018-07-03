@@ -19,9 +19,9 @@ There are two tasks:
 
 We got a string that contains connections between clothes:
 
-
+```javascript
 "Skirt-Tie,Pants-Belt,Pants-Jacket,Jacket-Coat,Skirt-Jacket"
-
+```
 
 And we need to parse this string into a hash table/dictionary.
 
