@@ -18,7 +18,11 @@ There are two tasks:
 * What is the correct order in dressing clothes?
 
 We got a string that contains connections between clothes:
+
+
 "Skirt-Tie,Pants-Belt,Pants-Jacket,Jacket-Coat,Skirt-Jacket"
+
+
 And we need to parse this string into a hash table/dictionary.
 
 ## Algorithm Schema
@@ -37,15 +41,25 @@ There is no necessary setup.
 
 
 ## Features
+Expected features:
+* dict/hash map
+* neighborhood matrix
+* incident matrix
+* list of neighborhoods (list of successors and list of predecessors)
+* topological search 
+
 To-do list:
-* Wow improvement to be done 1
-* Wow improvement to be done 2
+* Write real implementation of code solution in pure JavaScript
+* Try to write implementation in Ruby
+* Try another ways of solving task
 
 ## Status
 Project is: _in progress_
 
 ## Inspiration
 Based on my first pair coding challenge experience and khan academy materials. 
+
+For more examples of such algorithms you can visit [Hackerrank page](https://www.hackerrank.com/graphs/). 
 
 ## Contact
 Created by [@lapinskap](https://www.facebook.com/paulina.lapinska99) - feel free to contact me!
