@@ -24,7 +24,7 @@ We got a string that contains connections between clothes:
 ```
 For example, "Skirt-Tie" means that we can't wear Tie without dressing Skirt.
 
-We need to dress Skirt AND Pants to put on jacket. So answer to task 2 is "2", But how would we implement it?
+We need to dress Skirt AND Pants to put on jacket. So answer to task 2 is "2", but how would we implement it?
 
 First, we need to parse this string into a hash table/dictionary.
 
