@@ -10,7 +10,7 @@
 
 ## General info
 My beginnings in learning algorithms. The motivation was to learn how to solve problems with code. 
-I would like to compare several ways to create graphs in this repo, therefore I marked the project as _in progress_.
+I would like to compare several ways to implement graph in this repo, therefore I marked the project as _in progress_.
 
 ## Task info
 There are two tasks:
@@ -22,8 +22,9 @@ We got a string that contains connections between clothes:
 ```javascript
 "Skirt-Tie,Pants-Belt,Pants-Jacket,Jacket-Coat,Skirt-Jacket"
 ```
+For example, "Skirt-Tie" means that we can't wear Tie without dressing Skirt.
 
-And we need to parse this string into a hash table/dictionary.
+First, we need to parse this string into a hash table/dictionary.
 
 ## Algorithm Schema
 Graph unilaterally directed
